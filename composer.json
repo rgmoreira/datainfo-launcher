@@ -1,0 +1,39 @@
+{
+    "name": "datainfo/datainfo-api",
+    "type": "library",
+    "description": "Datainfo API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hallison Boaventura",
+            "email": "hallisonboaventura@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-client": "^5.0",
+        "symfony/browser-kit": "^5.0",
+        "symfony/dom-crawler": "^5.0",
+        "symfony/css-selector": "^5.0",
+        "symfony/validator": "^5.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0",
+        "phpunit/phpunit": "^8.5",
+        "symfony/console": "^5.0",
+        "phpstan/phpstan": "^0.12.10",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Datainfo\\DatainfoApi\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "tests"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datainfo\\DatainfoApi\\Test\\": "tests/"
+        }
+    }
+}
