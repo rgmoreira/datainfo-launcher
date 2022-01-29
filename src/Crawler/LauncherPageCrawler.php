@@ -47,6 +47,7 @@ class LauncherPageCrawler extends AbstractPageCrawler
 
     /**
      * Obtém o ajaxId usado para lançamento do realizado.
+     * buscar ajaxIdentifier do objeto eventResult com "attribute02":"#P100_SYSMSG,#P100_MSG,#P100_SALVOU"
      *
      * @return string
      */
@@ -56,7 +57,7 @@ class LauncherPageCrawler extends AbstractPageCrawler
             $this->crawl();
         }
 
-        $rightRegExp = '\,"attribute01":".*P100_DATAESFORCO\,\#P100_DESCRICAO';
+        $rightRegExp = '\,"attribute01":"\#P100_NUMSEQESFORCO\,\#P100_USUARIO\,\#P100_DESCRICAO';
         $ajaxId = $this->getAjaxId($this->lastResponse->getContent(), '', $rightRegExp);
 
         // Convertendo caracteres unicodes para utf-8 ("\u002F" -> "/")

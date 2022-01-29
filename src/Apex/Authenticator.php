@@ -79,7 +79,7 @@ class Authenticator
             $cookieJar->set($cookie);
         }
 
-        $oraWwvApp104CookieUpdated = $cookieJar->get('ORA_WWV_APP_104', '/apex/');
+        $oraWwvApp104CookieUpdated = $cookieJar->get('ORA_WWV_APP_7BE0D4E4C778F', '/apex/');
         $oraWwvApp104CookieUpdated = sprintf(
             '%s=%s',
             $oraWwvApp104CookieUpdated->getName(),
