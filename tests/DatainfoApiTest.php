@@ -99,7 +99,8 @@ class DatainfoApiTest extends TestCase
             $oraWwvApp104Cookie,
         );
 
-        $this->assertTrue(1 === preg_match('#^ORA_WWV_APP_7BE0D4E4C778F\=.*$#', $oraWwvApp104Cookie));
+        // $this->assertTrue(1 === preg_match('#^ORA_WWV_APP_7BE0D4E4C778F\=.*$#', $oraWwvApp104Cookie));
+        $this->assertTrue(1 === preg_match('#^LOGIN\=.*$#', $oraWwvApp104Cookie));
 
         return [
             $oraWwvApp104Cookie,

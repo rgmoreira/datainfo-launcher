@@ -57,7 +57,8 @@ class LoginPageCrawler extends AbstractPageCrawler
             $cookieJar->set($cookie);
         }
 
-        $oraWwvApp104Cookie = $cookieJar->get('ORA_WWV_APP_7BE0D4E4C778F', '/apex/');
+        // $oraWwvApp104Cookie = $cookieJar->get('ORA_WWV_APP_7BE0D4E4C778F', '/apex/');
+        $oraWwvApp104Cookie = $cookieJar->get('LOGIN', '/apex/');
 
         return sprintf(
             '%s=%s',
